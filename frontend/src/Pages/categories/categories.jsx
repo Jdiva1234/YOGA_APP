@@ -6,7 +6,7 @@ import './categories.css';
 import { Spinner, Button } from '@material-tailwind/react';
 
 const getBackendUrl = () => {
-  return process.env.VITE_BACKEND_URL || 'http://localhost:8001';
+  return import.meta.env.VITE_BACKEND_URL || 'http://localhost:8001';
 };
 
 const Categories = () => {
